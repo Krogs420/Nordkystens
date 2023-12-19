@@ -22,7 +22,7 @@ db.execute(`CREATE TABLE IF NOT EXISTS users(
 db.execute(`CREATE TABLE IF NOT EXISTS kurser(
     kursus_id INTEGER PRIMARY KEY AUTO_INCREMENT,
     type VARCHAR (255) NOT NULL,
-    pris INTEGER NOT NULL,
+    pris INTEGER NOT NULL
 );`); 
 
 db.execute(`CREATE TABLE IF NOT EXISTS indlæg(
@@ -30,15 +30,18 @@ db.execute(`CREATE TABLE IF NOT EXISTS indlæg(
     type VARCHAR (255) NOT NULL,
     delivery_time INTEGER NOT NULL,
     pris INTEGER NOT NULL,
-    user_id INTEGER NOT NULL,
-);`); 
+    user_id INTEGER NOT NULL
+);`);
 
 if (isInDeleteMode) {
     //users
-    db.execute(`INSERT INTO users(mail, user_name, password, admin) VALUES (?, ?, ?, ?);`, [process.env.ADMIN_MAIL, "Minato", await encryptPassword(process.env.ADMIN_PASSWORD), true]);
-    db.execute(`INSERT INTO users(mail, user_name, password, admin) VALUES (?, ?, ?, ?);`, [process.env.USER_MAIL, "Sasuke", await encryptPassword(process.env.USER_PASSWORD), false]);
-    db.execute(`INSERT INTO users(mail, user_name, password, admin) VALUES (?, ?, ?, ?);`, [process.env.SECOND_USER_MAIL, "Naruto", await encryptPassword(process.env.SECOND_USER_PASSWORD), false]);
+    db.execute(`INSERT INTO users(mail, user_name, password, admin) VALUES (?, ?, ?, ?);`, [process.env.ADMIN_MAIL, "Admin", await encryptPassword(process.env.ADMIN_PASSWORD), true]);
 
+    //kurser
+    db.execute(`INSERT INTO kurser(type, pris) VALUES (?, ?);`);
+
+    //indlæg
+    db.execute(`INSERT INTO indlæg(type, delivery_time, pris) VALUES (?, ?, ?);`);
 }
 
 db.end();

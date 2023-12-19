@@ -4,7 +4,7 @@ import bcrypt from "bcrypt";
 import { encryptPassword } from "../util/encryption.js";
 const router = Router();
 
-router.get("/api/users", adminCheck, async (req, res) => {
+/* router.get("/api/users", adminCheck, async (req, res) => {
   try {
     const [users, _] = await db.execute(`SELECT * FROM users`);
     const list = [];
@@ -20,9 +20,9 @@ router.get("/api/users", adminCheck, async (req, res) => {
   } catch {
     res.status(500).send({ data: undefined, message: "No users were found" });
   }
-});
+}); */
 
-router.get("/api/ninjas", async (req, res) => {
+/* router.get("/api/ninjas", async (req, res) => {
   try {
     const [ninjas, _] = await db.execute(`SELECT * FROM ninjas`);
     const list = [];
@@ -41,9 +41,9 @@ router.get("/api/ninjas", async (req, res) => {
   } catch {
     res.status(500).send({ data: undefined, message: "No ninjas were found" });
   }
-});
+}); */
 
-router.get("/characters", async (req, res) => {
+/* router.get("/characters", async (req, res) => {
   const response = await fetch(`https://api.narutodb.xyz/characters?limit=500`);
   const data = await response.json();
   res.send(data);
@@ -64,9 +64,9 @@ router.post("/api/users", async (req, res) => {
     [user.mail, user.password, user.role]
   );
   res.send({ data: rows });
-});
+}); */
 
-router.post("/login", async (req, res) => {
+router.post("/signin", async (req, res) => {
   const { mail, password } = req.body;
   const [rows, fields] = await db.execute(
     `SELECT * FROM users WHERE mail = ?`,

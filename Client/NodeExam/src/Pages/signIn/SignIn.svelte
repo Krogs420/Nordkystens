@@ -6,16 +6,16 @@
 
   const navigate = useNavigate();
 
-  if ($user) {
+  /* if ($user) {
     navigate("/");
     Toastr.info("You are already signed in.");
-  }
+  } */
 
   let mail = "";
   let password = "";
 
   async function handleSubmit() {
-    const url = "http://localhost:8081/login";
+    const url = "http://localhost:8082/signin";
     const body = {
       mail: mail,
       password: password,

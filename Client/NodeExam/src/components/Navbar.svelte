@@ -7,7 +7,7 @@
 
   async function signout() {
     try {
-      const response = await fetch(`http://localhost:8081/signout`, {
+      const response = await fetch(`http://localhost:8082/signout`, {
         method: "POST",
         credentials: "include",
         headers: {
@@ -30,9 +30,40 @@
 </script>
 
 <main>
-  <Router primary={false}>
-    <nav class="nav-link">
-      {#if !$user}
+  <header class="bg-white mx-auto max-w-2xl text-center">
+    <Router primary={false}>
+      <nav
+        class="flex justify-center items-center p-6 lg:px-8"
+        aria-label="Global"
+      >
+        <div class="flex gap-x-12">
+          <Link to="/" class="text-2xl font-semibold leading-6 text-gray-900"
+            >Forside</Link
+          >
+          <Link
+            to="/indlæg"
+            class="text-2xl font-semibold leading-6 text-gray-900">Indlæg</Link
+          >
+          <Link
+            to="/kurser"
+            class="text-2xl font-semibold leading-6 text-gray-900">Kurser</Link
+          >
+          <Link
+            to="/kontakt"
+            class="text-2xl font-semibold leading-6 text-gray-900">Kontakt</Link
+          >
+          {#if $user}
+          
+          <button class="text-2xl font-semibold leading-6 text-gray-900 bg-transparent border border-transparent rounded-md px-4 py-2 hover:bg-gray-200 focus:outline-none focus:bg-gray-200" on:click={signout}>Logud</button>        
+          {/if}
+        </div>
+      </nav>
+    </Router>
+  </header>
+</main>
+
+<!-- 
+ {#if !$user}
         <Link to="/">Forside</Link>
         <Link to="/indlæg">Indlæg</Link>
         <Link to="/kurser">Kurser</Link>
@@ -48,14 +79,11 @@
         <Link to="/">Forside</Link>
         <Link to="/indlæg">Indlæg</Link>
         <Link to="/kurser">Kurser</Link>
-        <Link to="/users">Users</Link>
+        <Link to="/kontakt">Kontakt</Link>
         <button class="ignore-css" id="signout" on:click={signout}
-          >Log ud</button
-        >
+          >Log ud</button>
       {/if}
-    </nav>
-  </Router>
-</main>
+
 
 <style>
   nav {
@@ -67,11 +95,10 @@
     height: 50px;
     color: #fff;
     padding: 10px;
-    font-family: "ninjanaruto";
   }
 
   .nav-link {
-    color: orange !important;
+    color: rgb(0, 255, 42) !important;
     text-decoration: none;
     margin-right: 20px;
     font-size: 25px;
@@ -86,15 +113,14 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.2s;
-    font-family: "ninjanaruto";
     font-size: 26px;
-    color: orange;
-    background: #0c2fdf;
-    -webkit-text-stroke: 1px black;
+    color: rgb(255, 255, 255);
+    background: #2188c3;
   }
 
   button:hover {
-    background-color: orange;
-    color: #0c2fdf;
+    background-color: lightskyblue;
+    color: #ffffff;
   }
 </style>
+ -->

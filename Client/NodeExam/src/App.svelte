@@ -2,11 +2,15 @@
   import Home from "./Pages/home/Home.svelte";
   import { Route, Router } from "svelte-navigator";
   import Contact from "./Pages/contact/Contact.svelte";
+  import Kurser from "./Pages/kurser/Kurser.svelte";
   import SignIn from "./Pages/signIn/SignIn.svelte";
   import Navbar from "./components/Navbar.svelte";
   import SignUp from "./Pages/signUp/SignUp.svelte";
   import Users from "./Pages/users/Users.svelte";
+  import TailwindCss from './lib/TailwindCSS.svelte';
 </script>
+
+<TailwindCss/>
 
 <main>
   <Router>
@@ -16,7 +20,7 @@
     <Route path="/">
       <Home />
     </Route>
-    <Route path="/contact">
+    <Route path="/kontakt">
       <Contact />
     </Route>
     <Route path="/users">
@@ -28,12 +32,16 @@
     <Route path="/signup">
       <SignUp />
     </Route>
+    <Route path="/kurser">
+      <Kurser />
+    </Route>
     
   </Router>
   <div class="background-image" />
 </main>
 
 <style>
+  
   #content {
     display: flex;
     min-width: 100%;
@@ -42,14 +50,12 @@
     color: #fff;
     margin-top: -10px;
     padding: 10px;
-    font-family: "ninjanaruto";
     font-size: 26px;
-    -webkit-text-stroke: 1px black;
     display: inline;
     padding-right: 30px;
   }
 
   main {
-    width: 90vw;
+    width: 60vw;
   }
 </style>

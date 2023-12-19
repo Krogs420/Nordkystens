@@ -10,7 +10,7 @@
   let password = "";
 
   async function checkEmailAndPas() {
-    const url = "http://localhost:8081/signup";
+    const url = "http://localhost:8082/signup";
     const body = {
       username: username,
       mail: mail,
@@ -36,7 +36,7 @@
   <h1>Sign Up</h1>
 </div>
 <form action="/login" on:submit|preventDefault={checkEmailAndPas}>
-  <label for="username">Username</label>
+  <label for="username">Username og Flemming</label>
   <input type="username" id="username" bind:value={username} required placeholder="Username" />
 
   <label for="mail">Email</label>

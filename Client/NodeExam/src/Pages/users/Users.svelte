@@ -13,7 +13,7 @@
   let users = [];
 
   onMount(async () => {
-    const url = "http://localhost:8081/api/users";
+    const url = "http://localhost:8082/api/users";
     fetch(url)
       .then((response) => response.json())
       .then((data) => {
@@ -24,7 +24,7 @@
       });
   });
 
-  const socket = io("ws://localhost:8081");
+  const socket = io("ws://localhost:8082");
   socket.on(`users`, (data) => {
     users.push(data);
     users = users;

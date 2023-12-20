@@ -7,7 +7,7 @@ html {
 }
 
 * {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 :root {
@@ -29,7 +29,7 @@ html {
 
 p {
   font-size: 20px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   margin: 0;
 }
 
@@ -37,33 +37,32 @@ a {
   font-weight: 500;
   color: rgb(255, 255, 255);
   text-decoration: inherit;
-  font-family: 'Times New Roman', Times, serif;
-  
+  font-family: "Times New Roman", Times, serif;
 }
 a:hover {
   color: lightskyblue;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-h1 {
+/* h1 {
   font-size: 60px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   margin: 0;
   color: rgb(255, 255, 255);
   padding: 40px;
-}
+} */
 
 h2 {
   margin: 0;
   padding: 40px;
   color: rgb(255, 255, 255);
   font-size: 2rem;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-weight: bold;
 }
 
@@ -80,7 +79,6 @@ form {
   background-color: white;
   border-radius: 5px;
   color: rgb(255, 255, 255);
-
 }
 
 label {
@@ -98,7 +96,7 @@ input {
   border: 1px solid rgb(0, 0, 0);
   border-radius: 5px;
   box-sizing: border-box;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 18px;
 }
 
@@ -110,7 +108,7 @@ textarea {
   border: 1px solid rgb(0, 0, 0);
   border-radius: 5px;
   box-sizing: border-box;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 18px;
 }
 
@@ -185,7 +183,9 @@ textarea::placeholder {
   font-size: 26px;
 } */
 
-.ignore-css{all:unset;}
+.ignore-css {
+  all: unset;
+}
 
 .card {
   padding: 2em;
@@ -243,7 +243,7 @@ textarea::placeholder {
     color: #213547;
     background-color: #ffffff;
   }
- /*  a:hover {
+  /*  a:hover {
     color: #747bff;
   }
   button {

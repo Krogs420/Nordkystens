@@ -1,6 +1,6 @@
 <body class="bg-gray-50">
   <div class="container mx-auto px-6 py-10">
-    <h1 class="text-4xl font-bold text-center text-gray-800">
+    <h1 class="text-4xl font-bold text-center py-10 text-gray-800">
       Nordkystens Fodterapi
     </h1>
     <div class="mt-6">

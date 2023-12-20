@@ -50,11 +50,16 @@
           >
           <Link
             to="/kontakt"
-            class="text-2xl font-semibold leading-6 text-gray-900">Kontakt</Link
+            class="text-2xl font-semibold leading-none text-gray-900"
+            >Kontakt</Link
           >
           {#if $user}
-          
-          <button class="text-2xl font-semibold leading-6 text-gray-900 bg-transparent border border-transparent rounded-md px-4 py-2 hover:bg-gray-200 focus:outline-none focus:bg-gray-200" on:click={signout}>Logud</button>        
+            <button on:click={signout}>
+              <h1
+                class="text-xl font-semibold leading-none text-gray-900"
+                >Logud
+            </h1>
+            </button>
           {/if}
         </div>
       </nav>

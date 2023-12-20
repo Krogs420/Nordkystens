@@ -31,22 +31,29 @@
               alt="Image of a foot"
             />
           </div>
-          <div class="p-8 flex flex-col justify-between">
-            <h2 class="text-4xl leading-tight font-extrabold text-gray-900">
-              Om mig
+          <div class="p-8">
+            <h2
+              class="block mt-1 text-4xl leading-tight font-extrabold text-gray-900"
+            >
+              Indlæg
             </h2>
-            <p class="mt-4 text-gray-600 text-lg flex-grow">
-              Mit navn er Jacob, og jeg er din erfarne fodterapeut her hos
-              Nordkystens Fodterapi. Min lidenskab ligger i at skræddersy indlæg
-              og facilitere kurser, der ikke kun lindrer dine aktuelle
-              fodproblemer, men også styrker dig til at forstå og pleje dine
-              fødder på lang sigt. Med et fokus på uddannelse tror jeg på, at
-              viden er nøglen til vedvarende fodkomfort, og det er min mission
-              at dele denne viden med dig.
+            <p class="mt-2 text-gray-600 text-lg">
+              Vores skræddersyede indlæg er mere end blot en støtte til dine
+              fødder - de er nøglen til personlig komfort og bevægelsesfrihed.
+              Hos Nordkystens Fodterapi tror vi på, at hvert skridt skal være en
+              behagelig oplevelse, og vores specialdesignede indlæg er skabt til
+              at tilpasse sig præcist til dine unikke fodstrukturer. Uanset om
+              du lider af smertefulde tilstande eller bare ønsker at forbedre
+              din daglige komfort, er vores indlæg designet til at støtte din
+              krop og sætte dig i stand til at bevæge dig frit og ubesværet.
             </p>
+            <button class="mt-4 w-full md:w-auto bg-blue-400 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded">
+              Book tid
+            </button>
           </div>
         </div>
       </div>
+      
 
       <div class="mt-12 bg-white shadow-lg rounded-lg overflow-hidden">
         <div class="md:flex">
@@ -73,6 +80,9 @@
               din daglige komfort, er vores indlæg designet til at støtte din
               krop og sætte dig i stand til at bevæge dig frit og ubesværet.
             </p>
+            <button class="mt-4 w-full md:w-auto bg-blue-400 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded">
+              Book tid
+            </button>
           </div>
         </div>
       </div>
@@ -103,6 +113,9 @@
               din daglige bevægelse. Velkommen til Nordkystens Fodterapi - hvor
               uddannelse bliver fundamentet for sund og behagelig fodpleje.
             </p>
+            <button class="mt-4 w-full md:w-auto bg-blue-400 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded">
+              Book tid
+            </button>
           </div>
         </div>
       </div>

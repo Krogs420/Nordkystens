@@ -23,20 +23,22 @@
           />
         </div>
         <div class="p-8 flex flex-col justify-between">
-          <h2 class="text-4xl leading-tight font-extrabold text-gray-900">Om mig</h2>
+          <h2 class="text-4xl leading-tight font-extrabold text-gray-900">
+            Om mig
+          </h2>
           <p class="mt-4 text-gray-600 text-lg flex-grow">
             Mit navn er Jacob, og jeg er din erfarne fodterapeut her hos
-            Nordkystens Fodterapi. Min lidenskab ligger i at skræddersy indlæg og
-            facilitere kurser, der ikke kun lindrer dine aktuelle fodproblemer,
-            men også styrker dig til at forstå og pleje dine fødder på lang sigt.
-            Med et fokus på uddannelse tror jeg på, at viden er nøglen til
-            vedvarende fodkomfort, og det er min mission at dele denne viden med
-            dig.
+            Nordkystens Fodterapi. Min lidenskab ligger i at skræddersy indlæg
+            og facilitere kurser, der ikke kun lindrer dine aktuelle
+            fodproblemer, men også styrker dig til at forstå og pleje dine
+            fødder på lang sigt. Med et fokus på uddannelse tror jeg på, at
+            viden er nøglen til vedvarende fodkomfort, og det er min mission at
+            dele denne viden med dig.
           </p>
         </div>
       </div>
     </div>
-    
+
     <div class="mt-12 bg-white shadow-lg rounded-lg overflow-hidden">
       <div class="md:flex">
         <div class="md:flex-shrink-0">
@@ -82,15 +84,15 @@
           </h2>
           <p class="mt-2 text-gray-600 text-lg">
             Vores kurser er en unik mulighed for at træde ind i verden af
-          specialiserede indlæg under kyndig vejledning fra os. Vi tror på, at
-          forståelsen af, hvordan man skaber skræddersyede indlæg, er afgørende
-          for langvarig fodkomfort. Gennem vores kurser får du ikke kun indsigt
-          i grundlæggende fodplejeprincipper, men også en dybdegående forståelse
-          af processen med at designe og fremstille indlæg. Lad os sammen
-          udforske vejen til at mestre kunsten at skabe indlæg, der ikke kun
-          støtter dine fødder, men også beriger din daglige bevægelse. Velkommen
-          til Nordkystens Fodterapi - hvor uddannelse bliver fundamentet for
-          sund og behagelig fodpleje.
+            specialiserede indlæg under kyndig vejledning fra os. Vi tror på, at
+            forståelsen af, hvordan man skaber skræddersyede indlæg, er
+            afgørende for langvarig fodkomfort. Gennem vores kurser får du ikke
+            kun indsigt i grundlæggende fodplejeprincipper, men også en
+            dybdegående forståelse af processen med at designe og fremstille
+            indlæg. Lad os sammen udforske vejen til at mestre kunsten at skabe
+            indlæg, der ikke kun støtter dine fødder, men også beriger din
+            daglige bevægelse. Velkommen til Nordkystens Fodterapi - hvor
+            uddannelse bliver fundamentet for sund og behagelig fodpleje.
           </p>
         </div>
       </div>

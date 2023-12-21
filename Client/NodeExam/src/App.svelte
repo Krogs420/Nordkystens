@@ -4,8 +4,9 @@
   import Contact from "./Pages/contact/Contact.svelte";
   import Kurser from "./Pages/kurser/Kurser.svelte";
   import SignIn from "./Pages/signIn/SignIn.svelte";
+  import Admin from "./Pages/admin/Admin.svelte";
   import Navbar from "./components/Navbar.svelte";
-  import SignUp from "./Pages/signUp/SignUp.svelte";
+  import Insole from "./Pages/insole/Insole.svelte";
   import Users from "./Pages/users/Users.svelte";
   import TailwindCss from './lib/TailwindCSS.svelte';
 </script>
@@ -29,11 +30,14 @@
     <Route path="/signin">
       <SignIn />
     </Route>
-    <Route path="/signup">
-      <SignUp />
+    <Route path="/indlaeg">
+      <Insole />
     </Route>
     <Route path="/kurser">
       <Kurser />
+    </Route>
+    <Route path="/admin">
+      <Admin />
     </Route>
     
   </Router>

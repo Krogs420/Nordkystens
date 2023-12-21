@@ -6,11 +6,6 @@
 
   const navigate = useNavigate();
 
-  /* if ($user) {
-    navigate("/");
-    Toastr.info("You are already signed in.");
-  } */
-
   let mail = "";
   let password = "";
 
@@ -19,6 +14,7 @@
     const body = {
       mail: mail,
       password: password,
+      admin: 1
     };
 
     try {
@@ -31,6 +27,7 @@
       if (response.ok) {
         const data = await response.json();
         user.set(data.data);
+        console.log("Hello there?!?!", ($user));
         localStorage.setItem("user", JSON.stringify($user));
         Toastr.success("You are now signed in");
         navigate("/");

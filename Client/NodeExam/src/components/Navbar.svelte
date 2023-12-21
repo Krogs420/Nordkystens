@@ -41,24 +41,32 @@
             >Forside</Link
           >
           <Link
-            to="/indlæg"
-            class="text-2xl font-semibold leading-6 text-gray-900">Indlæg</Link
+            to="/indlaeg"
+            class="text-2xl font-semibold leading-6 text-gray-900"
+            >Indlæg</Link
           >
           <Link
             to="/kurser"
-            class="text-2xl font-semibold leading-6 text-gray-900">Kurser</Link
+            class="text-2xl font-semibold leading-6 text-gray-900"
+            >Kurser</Link
           >
           <Link
             to="/kontakt"
             class="text-2xl font-semibold leading-none text-gray-900"
             >Kontakt</Link
           >
+          {#if $user && $user.admin === 1}
+            <Link
+              to="/admin"
+              class="text-2xl font-semibold leading-none text-gray-900"
+              >Admin</Link
+            >
+          {/if}
           {#if $user}
             <button on:click={signout}>
-              <h1
-                class="text-xl font-semibold leading-none text-gray-900"
-                >Logud
-            </h1>
+              <h1 class="text-xl font-semibold leading-none text-gray-900">
+                Logud
+              </h1>
             </button>
           {/if}
         </div>

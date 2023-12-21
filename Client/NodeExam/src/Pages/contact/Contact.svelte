@@ -37,7 +37,7 @@
         Kontakt
       </h2>
       <p class="mt-2 text-lg leading-8 text-gray-600">
-        Aute magna irure deserunt veniam aliqua magna enim voluptate.
+        Skriv og aftal en forundersøgelse
       </p>
     </div>
     <form action="#" method="POST" class="mx-auto mt-16 max-w-xl sm:mt-20">

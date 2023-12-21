@@ -27,7 +27,7 @@
           <div class="md:flex-shrink-0">
             <img
               class="h-full w-full object-cover md:w-48"
-              src="Forsidebillede1.jpg"
+              src="spinning.jpg"
               alt="Image of a foot"
             />
           </div>
@@ -35,7 +35,7 @@
             <h2
               class="block mt-1 text-4xl leading-tight font-extrabold text-gray-900"
             >
-              Indlæg
+              Kursus type A
             </h2>
             <p class="mt-2 text-gray-600 text-lg">
               Vores skræddersyede indlæg er mere end blot en støtte til dine
@@ -47,6 +47,7 @@
               din daglige komfort, er vores indlæg designet til at støtte din
               krop og sætte dig i stand til at bevæge dig frit og ubesværet.
             </p>
+            <p class="mt-2 text-gray-600 text-lg">Pris:</p>
             <button class="mt-4 w-full md:w-auto bg-blue-400 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded">
               Book tid
             </button>
@@ -60,7 +61,7 @@
           <div class="md:flex-shrink-0">
             <img
               class="h-full w-full object-cover md:w-48"
-              src="Forsidebillede1.jpg"
+              src="spinning.jpg"
               alt="Image of a foot"
             />
           </div>
@@ -68,7 +69,7 @@
             <h2
               class="block mt-1 text-4xl leading-tight font-extrabold text-gray-900"
             >
-              Indlæg
+            Kursus type B
             </h2>
             <p class="mt-2 text-gray-600 text-lg">
               Vores skræddersyede indlæg er mere end blot en støtte til dine
@@ -80,39 +81,7 @@
               din daglige komfort, er vores indlæg designet til at støtte din
               krop og sætte dig i stand til at bevæge dig frit og ubesværet.
             </p>
-            <button class="mt-4 w-full md:w-auto bg-blue-400 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded">
-              Book tid
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="mt-12 bg-white shadow-lg rounded-lg overflow-hidden">
-        <div class="md:flex">
-          <div class="md:flex-shrink-0">
-            <img
-              class="h-full w-full object-cover md:w-48"
-              src="Forsidebillede1.jpg"
-              alt="Image of a foot"
-            />
-          </div>
-          <div class="p-8">
-            <h2
-              class="block mt-1 text-4xl leading-tight font-extrabold text-gray-900"
-            >
-              Kurser
-            </h2>
-            <p class="mt-2 text-gray-600 text-lg">
-              Vores kurser er en unik mulighed for at træde ind i verden af
-              specialiserede indlæg under kyndig vejledning fra os. Vi tror på,
-              at forståelsen af, hvordan man skaber skræddersyede indlæg, er
-              afgørende for langvarig fodkomfort. Gennem vores kurser får du
-              ikke kun indsigt i grundlæggende fodplejeprincipper, men også en
-              dybdegående forståelse af processen med at designe og fremstille
-              indlæg. Lad os sammen udforske vejen til at mestre kunsten at
-              skabe indlæg, der ikke kun støtter dine fødder, men også beriger
-              din daglige bevægelse. Velkommen til Nordkystens Fodterapi - hvor
-              uddannelse bliver fundamentet for sund og behagelig fodpleje.
-            </p>
+            <p class="mt-2 text-gray-600 text-lg">Pris:</p>
             <button class="mt-4 w-full md:w-auto bg-blue-400 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded">
               Book tid
             </button>

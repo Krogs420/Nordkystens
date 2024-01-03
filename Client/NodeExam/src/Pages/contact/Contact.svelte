@@ -29,9 +29,6 @@
 
 <Router primary={false}>
   <div class="isolate bg-white px-24 py-6 sm:py-10 lg:px-8">
-    <!--  <div class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]" aria-hidden="true">
-      <div class="relative left-1/2 -z-10 aspect-[1155/678] w-[36.125rem] max-w-none -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-40rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
-    </div> -->
     <div class="mx-auto max-w-2xl text-center">
       <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
         Kontakt
@@ -134,38 +131,4 @@
       </div>
     </form>
   </div>
-  <!--   <div>
-    <div>
-      <h1>Kontakt os</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-        condimentum mollis ipsum eu pharetra. Nam facilisis ex et nisl ultrices
-        iaculis in sit amet ipsum. Sed viverra posuere aliquet. Sed augue arcu,
-        ullamcorper quis tellus nec, cursus laoreet sapien. Nullam lobortis ac
-        quam nec pellentesque. Fusce sed augue tortor. Quisque posuere, ante id
-        vestibulum dapibus, felis tortor vulputate libero, in porta lectus
-        mauris vel lorem. Quisque risus sem, rhoncus nec massa quis, fringilla
-        rhoncus sem. Maecenas maximus tincidunt eros, et tempor eros
-        sollicitudin nec. Praesent id euismod nisi. Nam efficitur accumsan odio,
-        et tristique nisl ullamcorper ut. Proin dapibus orci purus, at venenatis
-        elit elementum porta. Maecenas sed risus tincidunt, tincidunt nunc a,
-        gravida erat. Aliquam erat volutpat. Ut ligula sapien, luctus varius
-        diam id, vestibulum porttitor metus. Sed id laoreet orci, id viverra
-        orci.
-      </p>
-    </div>
-    <div class="container">
-      <form
-        on:submit|preventDefault={sendMail}
-        id="contact_form"
-        method="POST"
-        action="/contact"
-      >
-        <input type="name" bind:value={name} placeholder="Your Name. . ." />
-        <input type="email" bind:value={mail} placeholder="Your Email. . ." />
-        <textarea bind:value={message} placeholder="Your Message. . ." />
-        <button class="button-color" type="submit">Send Besked</button>
-      </form>
-    </div>
-  </div> -->
 </Router>

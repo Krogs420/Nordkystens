@@ -49,14 +49,6 @@ body {
   align-items: center;
 }
 
-/* h1 {
-  font-size: 60px;
-  font-family: "Times New Roman", Times, serif;
-  margin: 0;
-  color: rgb(255, 255, 255);
-  padding: 40px;
-} */
-
 h2 {
   margin: 0;
   padding: 40px;
@@ -120,23 +112,6 @@ table {
   border-radius: 5px;
 }
 
-/* button {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  margin-top: 30px;
-  border: 1px solid black;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.2s;
-  font-size: 16px;
-}
-
-button:hover {
-  background-color: lightskyblue;
-  color: rgb(255, 255, 255);
-} */
-
 input:hover {
   box-shadow: 0 2px 5px lightskyblue;
 }
@@ -171,17 +146,6 @@ textarea::placeholder {
   padding: 30px;
   border-radius: 5px;
 }
-
-/* #signout {
-  display: block;
-  width: 15%;
-  padding: 10px;
-  border: 1px solid black;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.2s;
-  font-size: 26px;
-} */
 
 .ignore-css {
   all: unset;
@@ -243,10 +207,4 @@ textarea::placeholder {
     color: #213547;
     background-color: #ffffff;
   }
-  /*  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  } */
 }

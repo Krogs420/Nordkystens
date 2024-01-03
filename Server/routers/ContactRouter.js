@@ -13,7 +13,6 @@ router.post("/mail", async (req, res) => {
   const { name, mail, message } = req.body;
 
   try {
-    // Create a transporter object with SMTP settings
     let testAccount = await nodemailer.createTestAccount();
 
     let transporter = nodemailer.createTransport({
@@ -25,11 +24,10 @@ router.post("/mail", async (req, res) => {
             pass: testAccount.pass
         },
         tls: {
-            rejectUnauthorized: false // allow self-signed certificates
+            rejectUnauthorized: false
         }
     });
 
-    // Send mail with defined transport object
     let info = await transporter.sendMail({
       from: `"Naruto Customer Support" <sasuke@uchiha.dk>`,
       to: `${req.body.name} <${req.body.mail}>`,

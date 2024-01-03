@@ -99,14 +99,3 @@
     </div>
   </div>
 </body>
-
-<!-- Vores kurser er en unik mulighed for at træde ind i verden af
-          specialiserede indlæg under kyndig vejledning fra os. Vi tror på, at
-          forståelsen af, hvordan man skaber skræddersyede indlæg, er afgørende
-          for langvarig fodkomfort. Gennem vores kurser får du ikke kun indsigt
-          i grundlæggende fodplejeprincipper, men også en dybdegående forståelse
-          af processen med at designe og fremstille indlæg. Lad os sammen
-          udforske vejen til at mestre kunsten at skabe indlæg, der ikke kun
-          støtter dine fødder, men også beriger din daglige bevægelse. Velkommen
-          til Nordkystens Fodterapi - hvor uddannelse bliver fundamentet for
-          sund og behagelig fodpleje. -->

@@ -1,5 +1,4 @@
 <script>
-    import { onMount } from 'svelte';
     let kursusAPris = '';
   
     async function gemPris() {
@@ -14,9 +13,7 @@
         });
   
         if (response.ok) {
-          // Håndter succes
         } else {
-          // Håndter fejl
         }
       } catch (error) {
         console.error('Fejl ved indsendelse:', error);

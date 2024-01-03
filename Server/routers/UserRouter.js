@@ -4,68 +4,6 @@ import bcrypt from "bcrypt";
 import { encryptPassword } from "../util/encryption.js";
 const router = Router();
 
-/* router.get("/api/users", adminCheck, async (req, res) => {
-  try {
-    const [users, _] = await db.execute(`SELECT * FROM users`);
-    const list = [];
-    users.forEach((user) => {
-      list.push({
-        id: user.id,
-        username: user.user_name,
-        mail: user.mail,
-        admin: user.admin,
-      });
-    });
-    res.send({ data: list });
-  } catch {
-    res.status(500).send({ data: undefined, message: "No users were found" });
-  }
-}); */
-
-/* router.get("/api/ninjas", async (req, res) => {
-  try {
-    const [ninjas, _] = await db.execute(`SELECT * FROM ninjas`);
-    const list = [];
-    ninjas.forEach((ninja) => {
-      list.push({
-        id: ninja.ninja_id,
-        name: ninja.name,
-        age: ninja.age,
-        nation: ninja.nation,
-        jutsu: ninja.jutsu,
-        hokage: ninja.hokage,
-        userid: ninja.user_id,
-      });
-    });
-    res.send({ data: list });
-  } catch {
-    res.status(500).send({ data: undefined, message: "No ninjas were found" });
-  }
-}); */
-
-/* router.get("/characters", async (req, res) => {
-  const response = await fetch(`https://api.narutodb.xyz/characters?limit=500`);
-  const data = await response.json();
-  res.send(data);
-});
-
-router.get("/clans", adminCheck, async (req, res) => {
-  const response = await fetch(`https://api.narutodb.xyz/clan?limit=100`);
-  const data = await response.json();
-  res.send(data);
-});
-
-router.post("/api/users", async (req, res) => {
-  const user = req.body;
-  const saltRounds = 12;
-  user.password = await bcrypt.hash(user.password, saltRounds);
-  const [rows, fields] = await db.execute(
-    `INSERT INTO users (mail, password, role) VALUES (?, ?, ?);`,
-    [user.mail, user.password, user.role]
-  );
-  res.send({ data: rows });
-}); */
-
 router.post("/signin", async (req, res) => {
   const { mail, password } = req.body;
   const [rows, fields] = await db.execute(
@@ -90,6 +28,15 @@ router.post("/signin", async (req, res) => {
   } else {
     res.status(500).send({ message: "Failed login" });
   }
+});
+
+router.post("/hjort", (req, res) => {
+  req.body;
+  console.log(req.body);
+  if (req.body && req.body.admin === 1){
+    res.send("hej");
+  }
+  res.send("Nope");
 });
 
 router.post("/signout", (req, res) => {

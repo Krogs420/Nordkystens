@@ -1,38 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 html {
   scroll-behavior: smooth;
 }
-
 * {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
-
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #2188c3;
-
+  background-color: white;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-
 p {
   font-size: 20px;
   font-family: "Times New Roman", Times, serif;
   margin: 0;
 }
-
 a {
   font-weight: 500;
   color: rgb(255, 255, 255);
@@ -42,12 +35,19 @@ a {
 a:hover {
   color: lightskyblue;
 }
-
 body {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+/* h1 {
+  font-size: 60px;
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+  color: rgb(255, 255, 255);
+  padding: 40px;
+} */
 
 h2 {
   margin: 0;
@@ -57,13 +57,11 @@ h2 {
   font-family: "Times New Roman", Times, serif;
   font-weight: bold;
 }
-
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-
 form {
   max-width: 400px;
   margin: 0 auto;
@@ -72,14 +70,12 @@ form {
   border-radius: 5px;
   color: rgb(255, 255, 255);
 }
-
 label {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
   color: rgb(255, 255, 255);
 }
-
 input {
   display: block;
   width: 100%;
@@ -91,7 +87,6 @@ input {
   font-family: "Times New Roman", Times, serif;
   font-size: 18px;
 }
-
 textarea {
   display: block;
   width: 100%;
@@ -103,7 +98,6 @@ textarea {
   font-family: "Times New Roman", Times, serif;
   font-size: 18px;
 }
-
 table {
   width: 70%;
   margin: 0 auto;
@@ -112,34 +106,44 @@ table {
   border-radius: 5px;
 }
 
+/* button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 30px;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-size: 16px;
+}
+button:hover {
+  background-color: lightskyblue;
+  color: rgb(255, 255, 255);
+} */
+
 input:hover {
   box-shadow: 0 2px 5px lightskyblue;
 }
-
 input::placeholder {
   color: rgb(255, 255, 255);
   font-size: 18px;
 }
-
 textarea:hover {
   box-shadow: 0 2px 5px lightskyblue;
 }
-
 textarea::placeholder {
   color: rgb(255, 255, 255);
   font-size: 18px;
 }
-
 ::placeholder {
   color: #999;
   font-size: 14px;
 }
-
 .fixed-div {
   position: static;
   padding: 15px;
 }
-
 .container {
   max-width: 400px;
   margin: 0 auto;
@@ -147,64 +151,70 @@ textarea::placeholder {
   border-radius: 5px;
 }
 
+/* #signout {
+  display: block;
+  width: 15%;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-size: 26px;
+} */
+
 .ignore-css {
   all: unset;
 }
-
 .card {
   padding: 2em;
 }
-
 .image-and-text {
   display: flex;
   width: 80vw;
   padding: 20px;
 }
-
 .image-and-text img {
   float: left;
   margin: 0 20px 0 0;
 }
-
 .image-and-text h2 {
   text-align: justify;
   margin-top: 0;
 }
-
 .image-and-text p {
   text-align: justify;
 }
-
 .image-and-text-reversed {
   display: flex;
   width: 80vw;
   padding: 20px;
 }
-
 .image-and-text-reversed h2 {
   text-align: justify;
   margin-top: 0;
 }
-
 .image-and-text-reversed img {
   float: right;
   margin: 0 0 0 20px;
 }
-
 .image-and-text-reversed p {
   text-align: justify;
 }
-
 #app {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
-
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
   }
+  /*  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  } */
 }

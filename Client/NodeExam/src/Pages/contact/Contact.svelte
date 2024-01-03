@@ -2,16 +2,12 @@
   import { Router, useNavigate } from "svelte-navigator";
   import toastr, * as Toastr from "toastr";
   import "../../../node_modules/toastr/build/toastr.css";
-
   const navigate = useNavigate();
-
   let name = "";
   let mail = "";
   let message = "";
-
   async function sendMail() {
     const url = "http://localhost:8082/mail";
-
     try {
       const response = await fetch(url, {
         method: "POST",
@@ -26,7 +22,6 @@
     }
   }
 </script>
-
 <Router primary={false}>
   <div class="isolate bg-white px-24 py-6 sm:py-10 lg:px-8">
     <div class="mx-auto max-w-2xl text-center">
